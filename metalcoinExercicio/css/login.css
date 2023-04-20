@@ -1,0 +1,101 @@
+.loginpg {
+    position: fixed;
+    width: 55%;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+}
+.metalcoin {
+    position: absolute;
+    height: 97px;
+    left: 230px;
+    top: 400px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 97px;
+    color: #FFFFFF;
+}
+.textlogin {
+    position: absolute;
+    width: 600px;
+    height: 72px;
+    left: 1400px;
+    top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    color: #000000;
+}
+.login {
+    position: absolute;
+    width: 600px;
+    height: 72px;
+    left: 1310px;
+    top: 300px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+}
+.barralogin {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 1300px;
+    top: 335px;
+    border-radius: 12px;
+}
+.senha {
+    position: absolute;
+    width: 600px;
+    height: 72px;
+    left: 1310px;
+    top: 410px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+}
+.barrasenha {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 1300px;
+    top: 445px;
+    border-radius: 12px;
+}
+.botao {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 1440px;
+    top: 550px;
+    border-radius: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    color: #000000;
+}
+.criarconta {
+    position: absolute;
+    width: 342px;
+    height: 62px;
+    left: 1340px;
+    top: 650px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0099A3;
+}
