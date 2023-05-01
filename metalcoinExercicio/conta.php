@@ -36,7 +36,7 @@ $resultado = $usuario->fetchAll();
                                     <img src="img/usuario-de-perfil.png" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
                                     <div class="middle">
                                         <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
-                                        <a href="logout.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Link primário</a>
+                                        <a href="logout.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Sair</a>
                                         <input type="file" style="display: none;" id="profilePicture" name="file" />
                                     </div>
                                 </div>

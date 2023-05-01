@@ -14,6 +14,7 @@
         <br>
         <label class="desc1">Da forma que desejar!</label>
     </div>
+        <h1 id="cadastro">Cadastro</h1>
         <form action="crud/cad_usuario.php" method="post" id="formulario">
         <div>
           <label style="top: 190px"class="nome" for="inputNome">Nome</label>
@@ -44,10 +45,9 @@
         <input style="top: 645px" class="input1" type="password" name="senha">
         <br>
         <div>
-          <a style="" class="ja_tenho" href="login.php">Já tenho uma conta</a>
+          <a style="left: 1200px;" class="ja_tenho" href="login.php">Já tenho uma conta</a>
         </div>
-        <button><a class="text_style" href="listarUsuarios.php">listar</a></button>
-        <input type="submit" value="CADASTRAR PESSOA">
+        <input class="bnt_cad" type="submit" value="CADASTRAR PESSOA">
         </form>
   </body>
 </html>

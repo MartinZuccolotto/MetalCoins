@@ -3,12 +3,11 @@
 <head>
 <head>
     <title>Login</title>
-    <link rel="icon" href="/img/logo.png">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/login.css">
   </head>
 </head>
-<body>
+<body style="width: 920px;" >
 <div class="loginpg">
     <label class="metalcoin">Metal Coin</label>
     <label class="textlogin" >Login</label>
@@ -18,7 +17,7 @@
     <input class="barralogin" type="text" name="login" id="">
     <label class="senha">Senha</label>
     <input class="barrasenha" type="password" name="senha" id="">
-    <button class="botao">enviar</button>
+    <button class="botao">entrar</button>
     <a class="criarconta" href="cad_usuarios.php">Ainda nao tem uma conta?<br> Cadastre-se já!</a>
 </form>
 </body>
