@@ -1,0 +1,33 @@
+#div{
+    position: absolute;
+width: 798px;
+height: 630px;
+left: 620px;
+top: 174px;
+
+background: #2B3987;
+border-radius: 35px;
+
+text-align: center;
+}
+
+.Letra{    
+font-style: italic;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+
+color: #FFFFFF;
+}
+
+.barra{
+    height: 30px;
+    width: 400px;
+background: #D9D9D9;
+border-radius: 18px;
+}
+
+.cadastro{
+    position: relative;
+    font-size: 50px;
+}
