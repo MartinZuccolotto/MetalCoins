@@ -2,26 +2,22 @@
     include ('../conn.php');
 
     $nome = $_POST['nome'];
-    $descricao = $_POST['descricao'];
     $valor = $_POST['valor'];
-    $autor = $_POST['autor'];
-
-    if(empty($nome) || empty($descricao) || empty($valor) || empty($autor)){
+    if(empty($nome) || empty($valor)){
         echo "Voce precisa preencher todos os campos";
 
     }   else    {
         try{
-        $cad_livro = $pdo->prepare('INSERT INTO biblioteca (nome, descricao, valor, autor) values (:nome, :descricao, :valor, :autor)');
+        $cad_livro = $pdo->prepare('INSERT INTO livro (nome, valor) values (:nome, :valor)');
         $cad_livro->execute(array(
             ':nome'=>$nome,
-            ':descricao'=>$descricao,
             ':valor'=>$valor,
-            ':autor'=>$autor
         )
         );
         
         echo "<script>
         alert('Livro Cadastrado!')
+        window.location.href='../listar_livros.php'
         </script>";
         } catch (Exception $e){
             //echo "Erro";   

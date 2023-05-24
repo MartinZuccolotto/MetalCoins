@@ -1,21 +1,15 @@
 <?php
   require("conn.php");
-
-  $tabela = $pdo->prepare("SELECT idlivro, nome, descricao, valor, autor FROM biblioteca;");
-
+  $tabela = $pdo->prepare("SELECT idlivro, nome, valor FROM livro;");
   $tabela->execute();
-
   $rowTabela = $tabela->fetchAll();
-
   if (empty($rowTabela)){
     echo "<script>
         alert('Tabela Está Vazia!')
         </script>";
   };
 ?>
-
 <!DOCTYPE HTML>
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -23,19 +17,15 @@
         <title>Tabela De livros</title>
         </head>
 
-    <body style="background-color: black;">
-        <div class="container">
+    <body >
+        <div class="div">
             <h1 style="text-align:center; color: white;">Tabela de Livros</h1>
             <table class="table table-dark table-striped">
-  ...
-
   <thead>
-    <tr  >
-      <th class="letra" scope="col">Id</th>
-      <th class="letra" scope="col">Nome</th>
-      <th class="letra" scope="col">Descricao</th>
-      <th class="letra" scope="col">Valor</th>
-      <th class="letra" scope="col">Autor</th>
+    <tr>
+      <th style="left:1px;" class="letra" scope="col">Id</th>
+      <th style="left:98px;" class="letra" scope="col">Nome</th>
+      <th style="left:138px;"class="letra" scope="col">Valor</th>
     </tr>
   </thead>
   <tbody>
@@ -43,16 +33,14 @@
     foreach($rowTabela as $linha){
       echo '<tr>';
       echo "<th class='letra' scope='row'>".$linha['idlivro']."</th>";
-      echo "<td class='letra'>".$linha['nome']."</td>";
-      echo "<td class='letra'>".$linha['descricao']."</td>";
-      echo "<td class='letra'>".$linha['valor']."</td>";
-      echo "<td class='letra'>".$linha['autor']."</td>";
+      echo "<td style='left:98px;' class='letra'>".$linha['nome']."</td>";
+      echo "<td style='left:138px;'class='letra'>".$linha['valor']."</td>";
       echo '</tr>';
     }
     ?>
   </tbody>
 </table>
-<a href="index.php" type="button" class="btn btn-primary float-end">CADASTRO DE LIVROS</a>
+<a style="color: black;" href="index.php" type="button">CADASTRO DE LIVROS</a>
         </div>
        </body >
 </html>
